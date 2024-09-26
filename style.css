@@ -1,0 +1,100 @@
+﻿/* Основные стили для всех страниц */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.relativecosmos.com/wp-content/uploads/2014/09/PW-2014-08-18-Crosswell.jpg');
+    background-size: cover;
+    color: #f00;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: rgba(85, 85, 85, 0.8);
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: rgba(119, 119, 119, 0.8);
+}
+
+main {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #fff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Новый общий класс для изображений */
+.image {
+    
+    border-radius: 5px;
+    padding: 10px;
+    transition: transform 0.3s ease; /* Плавный переход при изменении размера */
+    width: 50%; /* Начальная ширина изображения */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    margin-top: 20px;
+}
+
+.image-container {
+    overflow: hidden; /* Скрывает части изображения, выходящие за пределы контейнера */
+}
+
+
+/* Обычная тема */
+body {
+    background-color: white;
+    color: grey;
+}
+
+/* Темная тема */
+body.dark-theme {
+    background-color: black;
+    color: white;
+}
+
+nav a {
+    color: blue;
+}
+
+body.dark-theme nav a {
+    color: lightblue;
+}
